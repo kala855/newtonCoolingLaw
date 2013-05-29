@@ -1,0 +1,30 @@
+DEPTH = ../../../../..
+
+include $(DEPTH)/make/openclsdkdefs.mk 
+
+####
+#
+#  Targets
+#
+####
+
+OPENCL			= 1
+SAMPLE_EXE		= 1
+EXE_TARGET 		= coolingNewtonLaw
+EXE_TARGET_INSTALL   	= coolingNewtonLaw
+
+####
+#
+#  C/CPP files
+#
+####
+
+FILES 	= coolingNewtonLaw
+CLFILES = coolingNewtonLaw_kernels.cl 
+
+LLIBS  	+= SDKUtil
+
+include $(DEPTH)/make/openclsdkrules.mk
+
+copy:
+	cp coolingNewtonLaw_kernels.cl build/debug/x86_64/

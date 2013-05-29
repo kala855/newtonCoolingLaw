@@ -1,0 +1,3 @@
+build/debug/x86_64//coolingNewtonLaw.o: ../../../../../include/CL/cl.h
+build/debug/x86_64//coolingNewtonLaw.o: coolingNewtonLaw.c
+build/debug/x86_64//coolingNewtonLaw.o: ../../../../../include/CL/cl_platform.h
